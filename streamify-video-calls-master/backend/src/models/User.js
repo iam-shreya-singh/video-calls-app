@@ -37,7 +37,7 @@ const userSchema = new mongoose.Schema(
       type: String,
       default: "",
     },
-    isOnboarded: {
+    isOnboarded: {  //onboarding status of user, if completed can access all features
       type: Boolean,
       default: false,
     },
@@ -51,6 +51,7 @@ const userSchema = new mongoose.Schema(
   { timestamps: true }
 );
 
+//pre-hook to has pswd before saving user in db ,we use bcryptjs for hashing 
 userSchema.pre("save", async function (next) {
   if (!this.isModified("password")) return next();
 

@@ -3,7 +3,8 @@ import "dotenv/config";
 import cookieParser from "cookie-parser";
 import cors from "cors";
 import path from "path";
-
+import dotenv from "dotenv";
+dotenv.config();
 import authRoutes from "./routes/auth.route.js";
 import userRoutes from "./routes/user.route.js";
 import chatRoutes from "./routes/chat.route.js";
@@ -17,7 +18,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://localhost:5173",
+    origin: "http://https://friendly-eureka-pp6wrgp979535r-5173.app.github.dev/:5173",
     credentials: true, // allow frontend to send cookies
   })
 );
