@@ -18,7 +18,7 @@ const __dirname = path.resolve();
 
 app.use(
   cors({
-    origin: "http://https://friendly-eureka-pp6wrgp979535r-5173.app.github.dev/:5173",
+    origin: "https://friendly-eureka-pp6wrgp979535r-5173.app.github.dev/",
     credentials: true, // allow frontend to send cookies
   })
 );
