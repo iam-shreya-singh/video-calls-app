@@ -13,23 +13,22 @@ It includes **real-time messaging**, **video streaming**, **authentication**, an
 ## ✨ Features  
 - 💬 **Live Chat** with typing indicators & emoji reactions  
 - 🎥 **Video Calls** (1-to-1 & groups) with screen sharing + recording  
-- 🔐 **JWT Authentication** & protected rout
+- 🔐 **JWT Authentication** & protected route
 - 🌍 **Language Exchange Mode** with 32 unique UI themes  
 - 🧠 **Global State Management** using Zustand  
 - ⚡ **Reliable Data Fetching** with TanStack Query  
 - 🚨 **Error Handling** on frontend & backend  
-- 🚀 Deployable for free on **Render (backend)** & **Vercel (frontend)**  
-
+- 🚀 Deployable and hosted for free on **Render**
 ---
 
 ## 🛠 Tech Stack  
 **Frontend:** React (Vite), Zustand, TanStack Query, TailwindCSS, Stream SDK  
 **Backend:** Node.js, Express, MongoDB Atlas, JWT  
-**Infrastructure:** Render (API)
+**Infrastructure:** Render 
 
 ---
 
-## ⚙️ Environment Variables  
+## ⚙️ Environment Variables / .env Setup
 
 Create `.env` files for both **backend** and **frontend**.  
 
@@ -43,15 +42,20 @@ JWT_SECRET_KEY=your_jwt_secret
 NODE_ENV=development
 ```
 
-### Frontend environment (/frontend/.env)
+### 🔹 Frontend environment (/frontend/.env)
+``` env
 VITE_STREAM_API_KEY=your_stream_api_key
-
-### Backend (local)
-# from repo root
+```
+---
+## 🖥 Run Backend
+```bash
 cd backend
-
-# install dependencies
 npm install
-
-# run in development (watch / nodemon if configured)
 npm run dev
+```
+## 💻 Run Frontend
+```bash
+cd frontend
+npm install
+npm run dev
+```
